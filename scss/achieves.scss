@@ -1,0 +1,118 @@
+.achieves {
+    margin-top: 48px;
+    margin-bottom: 101px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 48px;
+}
+
+.achieves_text {
+    width: 285px;
+    text-align: center;
+}
+
+.achieves_text>h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    font-feature-settings: 'liga' off;
+    color: var(--text_color_fortittles);
+    letter-spacing: -0.025em;
+}
+
+.achieves_text>p {
+    color: var(--text_color_fortittles);
+}
+
+.achieves_info,
+.achieves_info_1,
+.achieves_info_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.achieves_item {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.achieves_item_img {}
+
+.achieves_item_text {
+    display: flex;
+    flex-flow: column;
+}
+
+.achieves_item_text>h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    font-feature-settings: 'liga' off;
+    color: var(--text_color_fortittles);
+}
+
+.achieves_item_text>p {
+    margin: 0;
+    color: var(--text_color_fortittles);
+}
+
+
+@media screen and (min-width: 375px) {
+    .achieves_text {
+        width: 335px;
+    }
+    .achieves {
+        margin-top: 48px;
+        margin-bottom: 161px;
+    }
+}
+
+@media screen and (min-width: 772px) {
+    .achieves_text {
+        width: 688px;
+    }
+
+    .achieves_text>h1 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .achieves_info {
+        width: 688px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .achieves {
+        flex-direction: row;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .achieves_text {
+        width: 592px;
+        text-align: start;
+    }
+
+    .achieves_text>h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .achieves_info {
+        width: 592px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

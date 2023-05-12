@@ -1,0 +1,137 @@
+.wrapper_manage {
+    background-color: #1DB5BE;
+}
+
+.manage {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 48px;
+}
+
+.manage_text {
+    margin-top: 48px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.manage_text > h1 {
+    margin: 0;
+    width: 285px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    font-feature-settings: 'liga' off;
+    color: var(--text_color_fortittles);
+}
+
+.manage_text > #manage_text_p {
+    width: 285px;
+}
+
+.manage_getapp {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 8px;
+}
+
+.manage_getapp>#manage_getapp_p {
+    margin: 0;
+}
+
+.manage_getapp_btns {
+    display: flex;
+    gap: 12.87px;
+    margin-bottom: 20px;
+}
+.manage_getapp_btn_1,
+.manage_getapp_btn_2 {
+    transition: all;
+}
+
+.manage_getapp_btn_1:active,
+.manage_getapp_btn_2:active {
+    transform: scale(0.97);
+}
+
+.manage_mobiles { 
+    margin-bottom: -4px;
+    display: none;
+}
+
+.manage_mobiles_tablet { display: none; }
+
+.manage_mobiles_desktop { display: none; }
+
+@media screen and (min-width: 375px) {
+    .manage_text > h1 {
+        margin: 0;
+        width: 335px;
+    }
+    // .manage_text > #manage_text_p {
+    //     width: 335px;
+    // }
+    .manage_mobiles { display: contents; }
+}
+@media screen and (min-width: 772px) {
+    .manage_mobiles { display: none; }
+
+    .manage_mobiles_desktop { display: none; }
+
+    .manage_mobiles_tablet { display: contents; }
+
+    .manage_text > h1,
+    .manage_text > #manage_text_p {
+        width: 688px;
+    }
+
+    .manage_text>h1 {
+        letter-spacing: -0.025em;
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .manage_text>#manage_text_p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .manage {
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .manage_mobiles { display: none; }
+
+    .manage_mobiles_tablet { display: none; }
+
+    .manage_mobiles_desktop { display: contents; }
+
+    .manage_main {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .manage_text { text-align: start; }
+
+    .manage_text > h1,
+    .manage_text > #manage_text_p {
+        width: 592px;
+    }
+
+    .manage_text > h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .manage_getapp {
+        align-items: flex-start;
+    }
+}

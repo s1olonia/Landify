@@ -1,0 +1,199 @@
+.wrapper_start 
+{
+    background-image: url(../assets/img/start_bg_forMobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.start 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.start_text_btns 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.start_text 
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.start_text > h1 
+{
+    margin: 0;
+    // width: 335px;
+    width: 285px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    color: var(--text_color_fortittles);
+}
+
+.start_text > p {
+    // width: 335px;
+    width: 285px;
+    color: var(--text_color_foritems);
+}
+
+a { text-decoration: none; }
+
+.start_btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 80px;
+}
+
+.start_btn_1 
+{
+    background-color: var(--btn_start);
+    width: 138px;
+    height: 56px;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    box-shadow: 0 5px 6px -4px rgba(0, 0, 0, 0.22), 0 10px 13px -4px rgba(0, 0, 0, 0.34), inset 0 30px 30px 0 rgba(255, 255, 255, 0.35), inset 0 -30px 30px 0 rgba(0, 0, 0, 0.10);
+}
+
+.start_btn_1:hover {
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.22), 0 10px 13px 0px rgba(0, 0, 0, 0.34), inset 0 18px 18px 0 rgba(255, 255, 255, 0.35), inset 0 -18px 18px 0 rgba(0, 0, 0, 0.10);
+    transform: scale(1.0);
+}
+
+.start_btn_1:active {
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.22), 0 10px 13px 0px rgba(0, 0, 0, 0.34), inset 0 3px 3px 0 rgba(255, 255, 255, 0.35), inset 0 -3px 3px 0 rgba(0, 0, 0, 0.10);
+}
+
+.start_btn_1 > p 
+{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    font-feature-settings: 'liga' off;
+    color: var(--white);
+}
+
+.start_btn_2
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: rgba(28, 28, 28, 0);
+    background-color: var(--white);
+    width: 179px;
+    height: 56px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    box-shadow: 0 5px 6px -4px rgba(0, 0, 0, 0.22), 0 10px 13px -4px rgba(0, 0, 0, 0.34), inset 0 30px 30px 0 rgba(255, 255, 255, 0.35), inset 0 -30px 30px 0 rgba(0, 0, 0, 0.10);
+}
+
+.start_btn_2:hover {
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.22), 0 10px 13px 0px rgba(0, 0, 0, 0.34), inset 0 18px 18px 0 rgba(255, 255, 255, 0.35), inset 0 -18px 18px 0 rgba(0, 0, 0, 0.10);
+    transform: scale(1.0);
+}
+
+.start_btn_2:active {
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.22), 0 10px 13px 0px rgba(0, 0, 0, 0.34), inset 0 3px 3px 0 rgba(255, 255, 255, 0.35), inset 0 -3px 3px 0 rgba(0, 0, 0, 0.10);
+}
+
+.start_btn_2 > p {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: 'liga' off;
+    color: #7C3AED;
+}
+
+.start_phone { 
+    display: none;
+    margin-bottom: 110px; 
+}
+
+
+@media screen and (min-width: 375px) {
+    .start_btns {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .start_phone { display: contents; }
+
+    .start_text > h1, .start_text > p {
+        width: 335px;
+    }
+    .start_btn_2 {
+        background-color: rgba(28, 28, 28, 0);
+    }
+             
+}
+
+@media screen and (min-width: 772px) {
+    .wrapper_start {
+        background-image: url(./assets/img/start_bg_forTablet.png);
+    }
+
+    .start_text>h1,
+    .start_text>p {
+        width: 688px;
+    }
+
+    .start_text>h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .wrapper_start {
+        background-image: url(../assets/img/start_bg_forDesktop.png);
+    }
+
+    .start {
+        flex-direction: row;
+        justify-content: center;
+        gap: 164px;
+    }
+
+    .start_text {
+        text-align: start;
+    }
+
+    .start_text>h1,
+    .start_text>p {
+        width: 648px;
+    }
+
+    .start_text>h1 {
+        font-size: 60px;
+        line-height: 72px;
+    }
+
+    .start_text_btns {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1920px) {}

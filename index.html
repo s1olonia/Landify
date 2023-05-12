@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/svg/logo_icon.svg">
+  <link rel="stylesheet" href="./node_modules/modern-normalize/modern-normalize.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landify</title>
+</head>
+
+<body>
+  <div class="wrapper wrapper_start">
+    <div class="container">
+      {{> header}}
+      <main class="main">
+        {{> start}}
+      </main>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container">
+      <main class="main">
+        {{> companies}}
+
+        {{> features}}
+      </main>
+    </div>
+  </div>
+
+  <div class="wrapper wrapper_stories">
+    <div class="container">
+      <main class="main">
+        {{> stories }}
+        {{> stories_desktop }}
+      </main>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container">
+      <main class="main">
+        {{> achieves }}
+
+        {{> tools }}
+      </main>
+    </div>
+  </div>
+
+  <div class="wrapper wrapper_manage">
+    <div class="container">
+      {{> manage }}
+    </div>
+  </div>
+
+  <div class="wrapper wrapper_footer">
+    <div class="container">
+      {{> footer }}
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>

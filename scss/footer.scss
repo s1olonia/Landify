@@ -1,0 +1,98 @@
+.wrapper_footer {
+  background-color: #000000;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 20px;
+
+  display: flex;
+  flex-flow: row wrap;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.footer_list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#footer_nav_ul_row1 {
+  display: flex;
+  gap: 24px;
+}
+
+#footer_nav_ul_row2 {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 12px;
+  column-gap: 24px;
+  width: 260px;
+}
+
+.footer_nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_nav > ul > li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "liga" off;
+  color: var(--white);
+}
+
+.footer_nav > ul > li a:hover {
+  opacity: 0.7;
+}
+
+#footer_license_p {
+  width: 270px;
+  color: var(--text_color_forfooter);
+}
+
+#footer_getapp_p {
+  color: var(--text_color_forfooter);
+}
+
+.footer_getapp_btns {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16.87px;
+}
+.footer_getapp_btn_1:active,
+.footer_getapp_btn_2:active {
+  transform: scale(0.97);
+}
+
+@media screen and (min-width: 375px) {
+  .footer_nav {
+    width: 325px;
+  }
+  #footer_nav_ul_row2 {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 772px) {
+  .footer {
+    flex-flow: row wrap;
+  }
+
+  #footer_nav_ul_row2 {
+    width: 475px;
+    flex-direction: row;
+  }
+}

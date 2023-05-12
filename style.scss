@@ -1,0 +1,80 @@
+@import "./scss/header.scss";
+@import "./scss/start.scss";
+@import "./scss/companies.scss";
+@import "./scss/features.scss";
+@import "./scss/stories.scss";
+@import "./scss/stories_desktop";
+@import "./scss/achieves.scss";
+@import "./scss/tools.scss";
+@import "./scss/manage.scss";
+@import "/scss/footer.scss";
+
+:root {
+  --wcontainer: 1440px;
+  --white: #ffffff;
+  --btn_start: #7c3aed;
+  --text_color_fortittles: #111827;
+  --text_color_foritems: #374151;
+  --light_gray: #6b7280;
+  --text_color_forfooter: #d1d5db;
+  --stories_radius: 8px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--wcontainer);
+  /* padding-left: 40px; */
+  /* padding-right: 40px; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.p_large {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  font-feature-settings: "liga" off;
+}
+
+.p_medium {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "liga" off;
+}
+
+.p_mini {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: "liga" off;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #7c3aed;
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #374151;
+}
